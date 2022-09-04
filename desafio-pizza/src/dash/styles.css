@@ -9,18 +9,16 @@
     justify-content: center;
 }
 
-.form-mensagem {
-    outline: 1px solid black;
+.boxMensagem {
     display: flex;
 
     flex-direction: column;
     align-items: center;
 
-    gap: 70px;
+    gap: 15px;
 
     padding-top: 32px;
-    width: 446px;
-    height: 577px;
+
 
     border-radius: 6px;
 
@@ -29,13 +27,13 @@
 
 }
 
-.group-form {
+.divForm {
     display: flex;
 
     flex-direction: column;
 }
 
-.form-mensagem__label {
+.labelPadrao {
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 600;
@@ -71,21 +69,18 @@
     border-radius: 6px;
 }
 
-.info-email {
+.btnForm {
+    all: unset;
+
+    cursor: pointer;
+
+    text-align: center;
+
     font-family: 'Public Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    margin-bottom: 20px;
-    letter-spacing: -0.382174px;
-
-    color: #191919;
-}
-
-.form-mensagem__btn {
-    all: unset;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 20px;
 
     display: flex;
     flex-direction: row;
@@ -93,23 +88,13 @@
     align-items: center;
     padding: 20px 16px;
 
-    text-align: center;
+    color: #ffffff;
+    background: rgb(43, 105, 7);
 
-    cursor: pointer;
-
-    color: #F3F3F3;
-
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-
-    width: 112px;
+    width: 180px;
     height: 26px;
     left: 904px;
     top: 690px;
 
-    background: black;
     border-radius: 30px;
 }

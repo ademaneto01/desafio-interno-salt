@@ -32,20 +32,21 @@ function EnvioMensagem() {
 
     return (
         <div className='screen'>
-            <form className='form-mensagem' onSubmit={handleMsg}>
-                <h2>Mensagem valendo pizza</h2>
-                <div className='group-form'>
-                    <label className='form-mensagem__label'>Numero</label>
-                    <input id='numero' placeHolder='(11) 9999-9999' label="teste" className='input_numero' type='text' name='numero' value={formMsg.numero} onChange={onChange} />
+            <img src='imgSalt.jpg' alt='imgSalt' />
+            <form className='boxMensagem' onSubmit={handleMsg}>
+                <div className='divForm'>
+                    <label className='labelPadrao'>Numero</label>
+                    <input id='numero' placeHolder='55 11 8888-8888' label="teste" className='input_numero' type='text' name='numero' value={formMsg.numero} onChange={onChange} />
                 </div>
 
-                <div className='group-form'>
-                    <label className='form-mensagem__label'>Mesagem</label>
-                    <input id='mensagem' placeHolder='Insira sua mensagem' className='input_mensagem' type='text' name='mensagem' value={formMsg.mensagem} onChange={onChange} />
+                <div className='divForm'>
+                    <label className='labelPadrao'>Envie uma mensagem</label>
+                    <input id='mensagem' placeHolder='Mensagem da pizza' className='input_mensagem' type='text' name='mensagem' value={formMsg.mensagem} onChange={onChange} />
                 </div>
-                <button className='form-mensagem__btn' type='submit' onClick={handleMsg}>Enviar Mensagem</button>
+                <button className='btnForm' type='submit' onClick={handleMsg}>Enviar Mensagem</button>
             </form>
         </div>
+
     );
 
 }
