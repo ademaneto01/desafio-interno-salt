@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import DashBoard from './dash';
-
+import DashBoard from './screen/index';
 
 function MainRoutes() {
   return (
