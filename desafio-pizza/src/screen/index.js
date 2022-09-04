@@ -20,7 +20,7 @@ function EnvioMensagem() {
         evt.preventDefault();
 
         try {
-            const response = await api.post('/env', {
+            const response = await api.post('/envioMensagem', {
                 id: formMsg.numero,
                 message: formMsg.mensagem
             });
@@ -32,7 +32,7 @@ function EnvioMensagem() {
 
     return (
         <div className='screen'>
-            <img src='imgSalt.jpg' alt='imgSalt' />
+            <img src='imgSalt.jpg' alt='imgSalt' id='imgSalt' />
             <form className='boxMensagem' onSubmit={handleMsg}>
                 <div className='divForm'>
                     <label className='labelPadrao'>Numero</label>
